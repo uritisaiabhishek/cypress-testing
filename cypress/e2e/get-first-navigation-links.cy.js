@@ -1,5 +1,5 @@
-describe('Export deduplicated links from multiple websites to one Excel', () => {
-  it('Extracts links from Header and Footer of each site with custom country labels', () => {
+describe('Extracts links from Header and Footer in multiple websites to Excel', () => {
+  it('Extracts links from Header and Footer in multiple websites to Excel', () => {
     const websites = [
       { url: 'https://www.example.com', label: 'Test' },
     ];
@@ -65,6 +65,7 @@ describe('Export deduplicated links from multiple websites to one Excel', () => 
           cy.task('writeExcel', {
             data: allLinks,
             filePath: `cypress/output/page-first-flow-urls-header-footer/${website.label}.xlsx`
+            // This will create a new file for each website in folder cypress/output/page-first-flow-urls-header-footer
           });
 
         });
