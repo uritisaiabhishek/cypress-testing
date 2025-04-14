@@ -1,0 +1,25 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Uriti Sai Abhishek",
+  "uri": "https://uritisaiabhishek.dev",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.3.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
